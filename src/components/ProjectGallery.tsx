@@ -124,7 +124,7 @@ const ProjectGallery = () => {
               <div 
                 key={project.id} 
                 className={cn(
-                  'portfolio-item overflow-hidden group rounded-sm opacity-0',
+                  'portfolio-item group overflow-hidden rounded-sm opacity-0',
                   visible && 'animate-fade-in'
                 )}
                 style={{ animationDelay: `${0.1 + index * 0.1}s` }}
@@ -134,7 +134,7 @@ const ProjectGallery = () => {
                   alt={project.title}
                   className="w-full h-80 object-cover transform group-hover:scale-105 transition-transform duration-500"
                 />
-                <div className="portfolio-overlay p-6 flex flex-col justify-end">
+                <div className="portfolio-overlay group-hover:opacity-100">
                   <p className="text-architect-accent mb-2 text-sm tracking-wider uppercase">{project.type} | {project.year}</p>
                   <h3 className="text-white text-xl md:text-2xl font-display font-medium">{project.title}</h3>
                 </div>

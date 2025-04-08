@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -66,11 +65,13 @@
   }
   
   .portfolio-item {
-    @apply overflow-hidden relative group cursor-pointer;
+    @apply overflow-hidden relative cursor-pointer;
   }
   
+  /* Use the group class directly in components instead of with @apply */
+  
   .portfolio-overlay {
-    @apply absolute inset-0 bg-architect-dark/70 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center;
+    @apply absolute inset-0 bg-architect-dark/70 opacity-0 transition-opacity duration-300 flex items-center justify-center;
   }
   
   .nav-link {
