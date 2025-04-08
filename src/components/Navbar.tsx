@@ -30,7 +30,7 @@ const Navbar = () => {
       )}
     >
       <div className="container-custom flex items-center justify-between">
-        <a href="#hero" className="text-architect-dark font-display text-xl font-bold tracking-tight">
+        <a href="#hero" className="text-architect-dark font-comic text-xl font-bold tracking-tight">
           ARCH<span className="text-architect-accent">NYC</span>
         </a>
 
@@ -40,7 +40,7 @@ const Navbar = () => {
             <a 
               key={index} 
               href={item.href} 
-              className="nav-link"
+              className="nav-link font-comic"
             >
               {item.label}
             </a>
@@ -66,7 +66,7 @@ const Navbar = () => {
             <a 
               key={index} 
               href={item.href} 
-              className="px-2 py-1.5 text-architect-gray hover:text-architect-dark transition-colors"
+              className="px-2 py-1.5 text-architect-gray hover:text-architect-dark transition-colors font-comic"
               onClick={() => setMobileMenuOpen(false)}
             >
               {item.label}

@@ -23,6 +23,7 @@ export default {
 				sans: ['Inter', 'sans-serif'],
 				display: ['Montserrat', 'sans-serif'],
 				serif: ['Playfair Display', 'serif'],
+				comic: ['"Comic Sans MS"', 'cursive'],
 			},
 			colors: {
 				border: 'hsl(var(--border))',
